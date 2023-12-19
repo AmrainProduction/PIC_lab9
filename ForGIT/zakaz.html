@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>New Year 2022</title>
+</head>
+<body>
+	 <div class="header">
+	 	<div class="section">
+	 		<div class="logo"><a href="main.html">
+	 			<img src="logo.png" alt="logo" style="width: 50px; height: 50px;"></a>
+	 		</div>
+	 		<div class="item button"><a href="main.html">Главная</a></div>
+	 		<div class="item button"><a href="Ruletka.html">Рулетка призов</a></div>
+	 		<div class="item button"><a href="Letter.html">Письмо Деду Морозу</a></div>
+	 		<div class="item button"><a href="AboutUs.html">О нас</a></div>
+	 	</div>
+	 	<div class="section">
+	 		<div class="item button"><a href="">Регистрация</a></div>
+	 		<div class="item button"><a href="">Войти</a></div>
+	 	</div>
+	 </div>
+	 <div class="container1">
+	 	<div class="box1"><img src="snegurochka.png" alt=""></div>
+	 	<div class="box2">
+	 	<div align="center" style="width: 100%; background: #98f789; "><span style="font: 30pt sans-serif;  color: #ff4747">До Нового Года осталось
+		<b><div align="center"><br/>
+		<script language="javascript">
+			function cdtime(container, targetdate){
+			 if (!document.getElementById || !document.getElementById(container)) return
+			 this.container=document.getElementById(container)
+			 this.currentTime=new Date()
+			 this.targetdate=new Date(targetdate)
+			 this.timesup=false
+			 this.updateTime()
+			 }
+			 cdtime.prototype.updateTime=function(){
+			 var thisobj=this
+			 this.currentTime.setSeconds(this.currentTime.getSeconds()+1)
+			 setTimeout(function(){thisobj.updateTime()}, 1000)
+			 }
+			 cdtime.prototype.displaycountdown=function(baseunit, functionref){
+			 this.baseunit=baseunit
+			 this.formatresults=functionref
+			 this.showresults()
+			 }
+			 cdtime.prototype.showresults=function(){
+			 var thisobj=this
+			 var timediff=(this.targetdate-this.currentTime)/1000
+			 if (timediff<0){
+			 this.timesup=true
+			 this.container.innerHTML=this.formatresults()
+			 return
+			 }
+			 var oneMinute=60
+			 var oneHour=60*60
+			 var oneDay=60*60*24
+			 var dayfield=Math.floor(timediff/oneDay)
+			 var hourfield=Math.floor((timediff-dayfield*oneDay)/oneHour)
+			 var minutefield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour)/oneMinute)
+			 var secondfield=Math.floor((timediff-dayfield*oneDay-hourfield*oneHour-minutefield*oneMinute))
+			 if (this.baseunit=="hours"){
+			 hourfield=dayfield*24+hourfield
+			 dayfield="n/a"
+			 }
+			 else if (this.baseunit=="minutes"){
+			 minutefield=dayfield*24*60+hourfield*60+minutefield
+			 dayfield=hourfield="n/a"
+			 }
+			 else if (this.baseunit=="seconds"){
+			 var secondfield=timediff
+			 dayfield=hourfield=minutefield="n/a"
+			 }
+			 this.container.innerHTML=this.formatresults(dayfield, hourfield, minutefield, secondfield)
+			 setTimeout(function(){thisobj.showresults()}, 1000)
+			 }
+			 function formatresults2(){
+			 if (this.timesup==false){
+			 var displaystring="<span class='nonewyear'>"+arguments[0]+" Дней "+arguments[1]+" Часов<br>"+arguments[2]+" Минут "+arguments[3]+" Секунд</span> "
+			 }
+			 else{
+			 var displaystring="<span class='newyear1'>С Новым годом!!!</span>"
+			 //alert("С Новым годом!!!")
+			 }
+			 return displaystring
+			 }
+			 </script>
+
+			 <div id="countdowncontainer2"></div>
+			 <script type="text/javascript">
+			 var currentyear=new Date().getFullYear()
+			 var thischristmasyear=(new Date().getMonth()==0 && new Date().getDate()==1)? currentyear : currentyear + 1
+			 var christmas=new cdtime("countdowncontainer2", "january 1, "+thischristmasyear+" 0:0:00")
+			 christmas.displaycountdown("days", formatresults2)
+		</script></div></b></span></div></center><b></b>
+		</div>
+		<div class="box3"><img src="DedMoroz.png" alt=""></div>	 	
+	 </div>
+<div class="containerTitle">
+	<div class="boxTitle">Выберите подарок:</div>
+</div>
+<div class="container2">
+	<div class="mainbox box11">
+		<div class="miniBox1"><img src="gift1.png" alt="gift1" style="width: 80%; padding: 10px 25px;"></div>
+		<div class="miniBox2">
+			<ol>
+			<li>Lorem
+				<ol>
+					<li>Lorem, ipsum.</li>
+					<li>Lorem, ipsum.</li>
+				</ol>
+			</li>
+				<li>Lorem, ipsum.</li>
+				<li>Lorem, ipsum.</li>
+			</ol>
+		</div>
+		<div class="miniBox3"><a href="">Выбрать!</a></div>
+	</div>
+	<div class="mainbox box11">
+		<div class="miniBox1"><img src="gift2.png" alt="gift2" style="width: 80%;  padding: 5px 25px;"></div>
+		<div class="miniBox2">
+			<ol>
+			<li>Lorem, ipsum.</li>	
+			<li>Lorem, ipsum.
+				<ol>
+					<li>Lorem, ipsum.</li>
+					<li>Lorem, ipsum.</li>
+				</ol>
+			</li>
+				<li>Lorem, ipsum.</li>
+			</ol>
+		</div>
+		<div class="miniBox3"><a href="">Выбрать!</a></div>
+	</div>
+	<div class="mainbox box11">
+		<div class="miniBox1"><img src="gift3.png" alt="gift1" style="width: 90%;  padding-left: 10px;"></div>
+		<div class="miniBox2">
+			<ol>
+			<li>Lorem, ipsum.</li>	
+			<li>Lorem, ipsum.
+				<ol>
+					<li>Lorem, ipsum.</li>
+				</ol>
+			</li>
+				<li>Lorem, ipsum.</li>
+				<li>Lorem, ipsum.</li>
+			</ol>
+		</div>
+		<div class="miniBox3"><a href="">Выбрать!</a></div>
+	</div>
+	<div class="mainbox box11">
+		<div class="miniBox1"><img src="gift4.png" alt="gift1" style="width: 100%; padding-top: 10px;"></div>
+		<div class="miniBox2">
+			<ol>
+			<li>Lorem, ipsum.</li>	
+			<li>Lorem, ipsum.
+				<ol>
+					<li>Lorem, ipsum.</li>
+				</ol>
+			</li>
+				<li>Lorem, ipsum.</li>
+				<li>Lorem, ipsum.</li>
+			</ol>
+		</div>
+		<div class="miniBox3"><a href="">Выбрать!</a></div>
+	</div>
+</div>
+
+<div class="containerTitletter">
+	<div class="boxTitleLetter">Напиши Деду Морозу:</div>
+</div>
+
+<div class="containerLetter">
+	<div class="boxNameGorod">
+		<div class="name">
+			<form name="test" method="post" action="input1.php">
+  			<p><b>Ваше имя:</b><br>
+   			<input type="text" size="45">
+  			</p>
+  		</form>
+		</div>
+		<div class="vozrast">
+			<form action="">
+				<p><b>Вам есть 18 лет?</b><Br>
+				   <input type="radio" name="browser" value="ie">ДА<Br>
+				   <input type="radio" name="browser" value="opera">Нет(<Br>
+				</p>
+			</form>
+		</div>
+		<div class="gorod">
+			<form>
+				<p><b>Из какой вы страны и города?</b><Br>
+			   	<p><select name="">
+			    <optgroup label="Российская Федерация">
+				    <option value="r1">Волгоград</option>
+				    <option value="r2">Москва</option>
+				    <option value="r3">Ростов</option>
+			    </optgroup>
+			    <optgroup label="Беларусь">
+				    <option value="u1">Гомель</option>
+				    <option value="u2">Витебск</option>
+				    <option value="u3">Брест</option>
+			    </optgroup>
+			   	</select></p>
+			 </form>
+		</div>
+	</div>
+	<div class="boxLetter">
+		<form action="">
+			<p><b>Письмо Деду Морозу и Снегурочке</b><Br>
+   			<textarea name="comment" cols="126" rows="10"></textarea></p>
+  			<p><input type="submit" value="Отправить">
+   			<input type="reset" value="Очистить"></p>
+   		</form>
+	</div>
+</div>
+<div class="footer">
+	<div class="boxFooter">Все права защищены, дед мороз липовый, подарков не будет! Чиатйте внимательно пользовательское соглашение!<br> ООО "СкамПроспект"</div>
+</div>
+</body>
+</html>
